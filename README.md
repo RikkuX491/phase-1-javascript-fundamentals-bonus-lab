@@ -3,7 +3,7 @@
 ## Learning Goals
 
 - Practice using `const` and `let` to declare variables in JavaScript
-- Practice working with the ternary operator.
+- Practice working with the ternary operator
 - Practice using the strict equality operator (`===`)
 - Practice using the `&&` operator
 - Use built-in objects like `Math` to accomplish complex tasks
