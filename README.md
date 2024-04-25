@@ -7,6 +7,7 @@
 - Practice using the strict equality operator (`===`)
 - Practice using the `&&` operator
 - Use built-in objects like `Math` to accomplish complex tasks
+- Employ operators to perform arithmetic and assign values to variables
 - Concatenate strings with the `+` operator
 - Interpolate variables and other JavaScript expressions inside template literals
 
