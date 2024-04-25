@@ -45,7 +45,7 @@ rely on the test failure messages to guide your code.
 
 4. Create a variable called `randomNumber` that is defined using `const` and is set to a `number` that is a random number between 1 and 10.
 
-Hint: You can use `Math.random()` to generate a random number between 0 and 1.
+Hint: You can use `Math.random()` to generate a floating-point random number that's greater than or equal to 0 and less than 1.
 
 5. Create a variable called `luckyNumberPhrase` that is defined using `const` and is set to a `string` that incorporates the value of `randomNumber` into the string using string concatenation or string interpolation. For example, if `randomNumber` has the value of 7, the value of `luckyNumberPhrase` should be "Your lucky number is 7!"
 
