@@ -41,13 +41,17 @@ rely on the test failure messages to guide your code.
 
 2. Create a variable called `password` that is defined using `let` and is set to a `string` with the text "flatironschool".
 
-3. Write a ternary expression that will evaluate to the `string` "Welcome alice123!" if the value of `username` is strictly equal to "alice123" and the value of `password` is strictly equal to "flatironschool". Otherwise, the ternary expression should evaluate to the string "Invalid username or password! Please try again!" Store the result of the ternary expression into a variable called `loginValidationPhrase` that is declared using `const`. For the "Welcome alice123!" string, you must use string concatenation to combine the following parts of the string together in this exact order: The `"Welcome "` string, the `username` variable, and the `"!"` string.
+3. Write a ternary expression that will evaluate to the `string` "Welcome alice123!" if the value of `username` is strictly equal to "alice123" and the value of `password` is strictly equal to "flatironschool". Otherwise, the ternary expression should evaluate to the string "Invalid username or password! Please try again!" Store the result of the ternary expression into a variable called `loginValidationPhrase` that is declared using `const`. For the "Welcome alice123!" string, you must use string concatenation to combine the following parts of the string together in this exact order: The "Welcome " string, the `username` variable, and the "!" string.
+
+Hint: You can concatenate strings with the `+` operator.
 
 4. Create a variable called `randomNumber` that is defined using `const` and is set to a `number` that is a random number between 1 and 10.
 
 Hint: You can use `Math.random()` to generate a floating-point random number that's greater than or equal to 0 and less than 1.
 
-5. Create a variable called `luckyNumberPhrase` that is defined using `const` and is set to a `string` that incorporates the value of `randomNumber` into the string using string concatenation or string interpolation. For example, if `randomNumber` has the value of 7, the value of `luckyNumberPhrase` should be "Your lucky number is 7!"
+5. Create a variable called `luckyNumberPhrase` that is defined using `const` and is set to a `string` that begins with "Your lucky number is " followed by the value of the `randomNumber` variable and "!". For example, if `randomNumber` has the value of 7, the value of `luckyNumberPhrase` should be "Your lucky number is 7!" You must use string interpolation to combine the following parts of the string together in this exact order: The "Your lucky number is " `string`, the `randomNumber` variable, and the "!" `string`.
+
+Hint: You can interpolate variables and other JavaScript expressions inside template literals, which are simply strings wrapped in backticks `` rather than single or double quotes. Template literals enable us to interpolate the value of a variable into a string by wrapping the variable in curly braces preceded by a dollar sign like this: ${yourVariable}.
 
 ***
 

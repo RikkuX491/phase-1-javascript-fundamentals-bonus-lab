@@ -88,12 +88,20 @@ describe('index.js', function() {
       expect(typeof luckyNumberPhrase).to.equal('string');
     });
 
-    it("contains 'Your lucky number is' as part of the phrase", function() {
+    it("contains 'Your lucky number is ' as part of the phrase", function() {
       expect(luckyNumberPhrase.includes('Your lucky number is ')).to.equal(true);
     });
 
-    it("contains randomNumber as part of the phrase", function() {
+    it("contains the value of randomNumber as part of the phrase", function() {
       expect(luckyNumberPhrase.includes(randomNumber)).to.equal(true);
+    });
+
+    it("contains '!' as part of the phrase", function() {
+      expect(luckyNumberPhrase.includes('!')).to.equal(true);
+    });
+
+    it("uses string interpolation to combine 'Your lucky number is ' with the randomNumber variable and '!'", function() {
+      expect(js).to.match(/is \${randomNumber}!/)
     });
   });
 });
