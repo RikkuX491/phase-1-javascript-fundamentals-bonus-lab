@@ -6,10 +6,10 @@
 - Practice working with the ternary operator
 - Practice using the strict equality operator (`===`)
 - Practice using the `&&` operator
-- Use the built-in `Math` object to accomplish complex tasks
-- Employ operators to perform arithmetic and assign values to variables
 - Concatenate strings with the `+` operator
 - Interpolate variables and other JavaScript expressions inside template literals
+- Use the built-in `Math` object to accomplish complex tasks
+- Employ operators to perform arithmetic and assign values to variables
 
 ## Introduction
 
