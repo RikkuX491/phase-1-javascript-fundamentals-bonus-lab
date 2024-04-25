@@ -54,6 +54,10 @@ describe('index.js', function() {
         expect(loginValidationPhrase).to.equal('Invalid username or password! Please try again!');
       }
     });
+
+    it("uses string concatenation to combine 'Welcome ' with the username variable and '!'", function() {
+      expect(js).to.match(/["']Welcome ["'](\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*username(\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*["']!["']/)
+    });
   });
 
   describe('randomNumber', function() {
