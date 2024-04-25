@@ -51,4 +51,4 @@ Hint: You can use `Math.random()` to generate a random number between 0 and 1.
 ***
 
 After you have all the tests passing, feel free to commit and push your changes
-up to GitHub, but this is not an official Flatiron School / Canvas lab, so you will not be able to submit your work to Canvas.
+up to GitHub, but this is not an official Canvas lab, so you will not be able to submit your work to Canvas.
