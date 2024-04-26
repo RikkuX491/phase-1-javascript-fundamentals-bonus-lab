@@ -41,7 +41,7 @@ rely on the test failure messages to guide your code.
 
 2. Create a variable called `password` that is defined using `let` and is set to a `string` with the text "flatironschool".
 
-3. Write a ternary expression that will evaluate to the `string` "Welcome alice123!" if the value of `username` is strictly equal to "alice123" and the value of `password` is strictly equal to "flatironschool". Otherwise, the ternary expression should evaluate to the string "Invalid username or password! Please try again!" Store the result of the ternary expression into a variable called `loginValidationPhrase` that is declared using `const`. For the "Welcome alice123!" string, you must use string concatenation to combine the following parts of the string together in this exact order: The "Welcome " string, the `username` variable, and the "!" string.
+3. Write a ternary expression that will evaluate to the `string` "Welcome alice123!" if the value of `username` is strictly equal to "alice123" and the value of `password` is strictly equal to "flatironschool". Otherwise, the ternary expression should evaluate to the string "Invalid username or password!" Store the result of the ternary expression into a variable called `loginValidationPhrase` that is declared using `const`. For the "Welcome alice123!" string, you must use string concatenation to combine the following parts of the string together in this exact order: The "Welcome " string, the `username` variable, and the "!" string.
 
 Hint: You can concatenate strings with the `+` operator.
 
