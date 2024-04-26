@@ -8,7 +8,7 @@
 - Practice using the `&&` operator
 - Concatenate strings with the `+` operator
 - Interpolate variables and other JavaScript expressions inside template literals
-- Use the built-in `Math` object to accomplish complex tasks
+- Use built-in objects like `Math` and `Number` to accomplish complex tasks
 - Employ operators to perform arithmetic and assign values to variables
 
 ## Introduction
@@ -45,9 +45,9 @@ rely on the test failure messages to guide your code.
 
 Hint: You can concatenate strings with the `+` operator.
 
-4. Create a variable called `randomNumber` that is defined using `const` and is set to a `number` that is a random number between 1 and 10.
+4. Create a variable called `randomNumber` that is defined using `const` and is set to a `number` that is a random integer (whole number) between 1 and 10.
 
-Hint: You can use `Math.random()` to generate a floating-point random number that's greater than or equal to 0 and less than 1.
+Hint: You can use `Math.random()` to generate a floating-point random number that's greater than or equal to 0 and less than 1. You can use `Number.parseInt()` to convert a floating-point number to an integer.
 
 5. Create a variable called `luckyNumberPhrase` that is defined using `const` and is set to a `string` that begins with "Your lucky number is " followed by the value of the `randomNumber` variable and "!". For example, if `randomNumber` has the value of 7, the value of `luckyNumberPhrase` should be "Your lucky number is 7!" You must use string interpolation to combine the following parts of the string together in this exact order: The "Your lucky number is " `string`, the `randomNumber` variable, and the "!" `string`.
 
@@ -62,8 +62,8 @@ up to GitHub, but this is not an official Canvas lab, so you will not be able to
 
 ## Resources
 * MDN
-  * [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-  * [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+  * [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+  * [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
   * [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
   * [Strict equality (===)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
   * [Logical AND (&&)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
@@ -71,3 +71,6 @@ up to GitHub, but this is not an official Canvas lab, so you will not be able to
   * [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
   * [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
   * [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+  * [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+  * [Number.parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt)
+  * [String coercion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion)
