@@ -49,9 +49,8 @@ describe('index.js', function() {
       expect(typeof loginValidationPhrase).to.equal('string', 'Expected the data type of loginValidationPhrase to be a string');
     });
 
-    it("uses a ternary expression to set its value to 'Welcome alice123', if the username and password are correct, otherwise sets its value to 'Invalid username or password! Please try again!'", function() {
-      expect(loginValidationPhrase);
-      if(username === 'alice123' && password == 'flatironschool'){
+    it("uses a ternary expression to set its value to 'Welcome alice123', if the value of the isAuthorized variable is true, otherwise sets its value to 'Invalid username or password!'", function() {
+      if(isAuthorized){
         expect(loginValidationPhrase).to.equal('Welcome alice123!');
       }
       else{
