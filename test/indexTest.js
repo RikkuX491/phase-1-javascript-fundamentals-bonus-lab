@@ -12,7 +12,7 @@ describe('index.js', function() {
   describe('username', function() {
     it('is declared using let', function () {
       expect(username);
-      expect(js).to.match(/let username/, 'Expected username to be declared using let');
+      expect(js).to.match(/const username/, 'Expected username to be declared using let');
     });
 
     it('is a string', function () {
@@ -27,7 +27,7 @@ describe('index.js', function() {
   describe('password', function() {
     it('is declared using let', function () {
       expect(password);
-      expect(js).to.match(/let password/, 'Expected password to be declared using let');
+      expect(js).to.match(/const password/, 'Expected password to be declared using let');
     });
 
     it('is a string', function () {
