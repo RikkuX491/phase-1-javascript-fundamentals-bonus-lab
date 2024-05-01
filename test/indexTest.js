@@ -10,9 +10,9 @@ const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
 
 describe('index.js', function() {
   describe('username', function() {
-    it('is declared using let', function () {
+    it('is declared using const', function () {
       expect(username);
-      expect(js).to.match(/const username/, 'Expected username to be declared using let');
+      expect(js).to.match(/const username/, 'Expected username to be declared using const');
     });
 
     it('is a string', function () {
@@ -25,9 +25,9 @@ describe('index.js', function() {
   });
 
   describe('password', function() {
-    it('is declared using let', function () {
+    it('is declared using const', function () {
       expect(password);
-      expect(js).to.match(/const password/, 'Expected password to be declared using let');
+      expect(js).to.match(/const password/, 'Expected password to be declared using const');
     });
 
     it('is a string', function () {
@@ -36,6 +36,23 @@ describe('index.js', function() {
 
     it("is set to the value 'flatironschool'", function () {
       expect(password).to.equal('flatironschool');
+    });
+  });
+
+  describe('isAuthorized', function() {
+    it('is declared using let', function() {
+      expect(isAuthorized);
+      expect(js).to.match(/let isAuthorized/, "Expected isAuthorized to be declared using let");
+    });
+
+    it('is a boolean', function() {
+      expect(typeof isAuthorized).to.equal('boolean', 'Expected the data type of isAuthorized to be a boolean');
+    });
+
+    it("is set to the value of true if the value of username is strictly equal to 'alice123' and the value of password is strictly equal to 'flatironschool', otherwise is set to the value of false", function() {
+      expect(isAuthorized).to.equal((username === 'alice123' && password === 'flatironschool') ? true : false)
+      expect(js).to.match(/if\(.+\)[ \n]*((\{[ \n]*isAuthorized[ \n]*=[ \n]*true[ \n]*\})|(isAuthorized[ \n]*=[ \n]*true))/, "Expected the use of an if statement to set isAuthorized to true")
+      expect(js).to.match(/else[ \n]*((\{[ \n]*isAuthorized[ \n]*=[ \n]*false[ \n]*\})|([ \n]+isAuthorized[ \n]*=[ \n]*false))/, "Expected the use of an else clause to set isAuthorized to false")
     });
   });
 
@@ -60,8 +77,11 @@ describe('index.js', function() {
     });
 
     it("uses string concatenation to combine 'Welcome ' with the username variable and '!'", function() {
-      expect(loginValidationPhrase);
-      expect(username);
+      if(isAuthorized){
+        expect(loginValidationPhrase.includes('Welcome ')).to.equal(true, "Expected the loginValidationPhrase string to include 'Welcome ' as part of the string");
+        expect(loginValidationPhrase.includes(username)).to.equal(true, 'Expected the loginValidationPhrase string to include the value of the username variable as part of the string');
+        expect(loginValidationPhrase.includes('!')).to.equal(true, "Expected the loginValidationPhrase string to include '!' as part of the string");
+      }
       expect(js).to.match(/["']Welcome ["'](\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*username(\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*["']!["']/, 'Expected the use of string concatenation');
     });
   });
