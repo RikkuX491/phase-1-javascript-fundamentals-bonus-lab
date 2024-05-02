@@ -73,7 +73,7 @@ describe('index.js', function() {
       else{
         expect(loginValidationPhrase).to.equal('Invalid username or password!');
       }
-      expect(js).to.match(/const loginValidationPhrase( )*=.+\?.+:/, 'Expected the use of the ternary operator');
+      expect(js).to.match(/const loginValidationPhrase( )*=.+\?.+:.+/, 'Expected the use of the ternary operator');
     });
 
     it("uses string concatenation to combine 'Welcome ' with the username variable and '!'", function() {
@@ -125,7 +125,7 @@ describe('index.js', function() {
       expect(luckyNumberPhrase.includes('Your lucky number is ')).to.equal(true, "Expected the luckyNumberPhrase string to include 'Your lucky number is ' as part of the string");
       expect(luckyNumberPhrase.includes(randomNumber)).to.equal(true, 'Expected the luckyNumberPhrase string to include the value of the randomNumber variable as part of the string');
       expect(luckyNumberPhrase.includes('!')).to.equal(true, "Expected the luckyNumberPhrase string to include '!' as part of the string");
-      expect(js).to.match(/Your lucky number is \${randomNumber}!/, 'Expected the use of string interpolation');
+      expect(js).to.match(/const luckyNumberPhrase[ \n]*=[ \n]*`Your lucky number is \${randomNumber}!`/, 'Expected the use of string interpolation');
     });
   });
 });
