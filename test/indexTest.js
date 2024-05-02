@@ -82,7 +82,7 @@ describe('index.js', function() {
         expect(loginValidationPhrase.includes(username)).to.equal(true, 'Expected the loginValidationPhrase string to include the value of the username variable as part of the string');
         expect(loginValidationPhrase.includes('!')).to.equal(true, "Expected the loginValidationPhrase string to include '!' as part of the string");
       }
-      expect(js).to.match(/["']Welcome ["'](\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*username(\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*["']!["']/, 'Expected the use of string concatenation');
+      expect(js).to.match(/["'`]Welcome ["'`](\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*username(\n)*[ ]*(\n)*\+(\n)*[ ]*(\n)*["'`]!["'`]/, 'Expected the use of string concatenation');
     });
   });
 
