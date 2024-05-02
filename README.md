@@ -5,7 +5,8 @@
 - Practice using `const` and `let` to declare variables in JavaScript
 - Practice working with the `string`, `boolean`, and `number` data types
 - Practice using `if` statements and `else` clauses
-- Practice working with the ternary operator
+- Practice using the ternary operator
+- Practice working with truthy and falsy values
 - Practice using the strict equality operator (`===`)
 - Practice using the `&&` operator
 - Concatenate strings with the `+` operator
@@ -68,7 +69,11 @@ up to GitHub, but this is not an official Canvas lab, so you will not be able to
 * MDN
   * [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
   * [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+  * [JavaScript data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+  * [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   * [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
+  * [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+  * [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
   * [Strict equality (===)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
   * [Logical AND (&&)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
   * [String concatenation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition#string_concatenation)
